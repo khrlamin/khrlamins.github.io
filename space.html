@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-blue-800 p-4 text-white text-center text-2xl font-bold">
+    NASA Astronomy Picture of the Day
+  </header>
+
+  <main class="max-w-3xl mx-auto mt-6 p-4 bg-gray-800 rounded-xl shadow">
+    <input type="date" id="dateInput" class="w-full p-2 mb-4 text-black rounded" />
+    <div id="spaceContainer" class="text-center"></div>
+  </main>
+
+  <script src="jsspace.js"></script>
+</body>
+</html>

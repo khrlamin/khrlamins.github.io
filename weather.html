@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 text-gray-900">
+  <header class="bg-blue-600 p-4 text-white text-center text-2xl font-bold">
+    Weather Dashboard
+  </header>
+
+  <main class="max-w-xl mx-auto mt-6 p-4 bg-white rounded-xl shadow">
+    <input id="cityInput" type="text" placeholder="Enter city name" class="w-full p-2 mb-4 border rounded"/>
+    <button id="fetchBtn" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Get Weather</button>
+    
+    <div id="weatherResult" class="mt-4"></div>
+  </main>
+
+  <script src="jsweather.js"></script>
+</body>
+</html>
