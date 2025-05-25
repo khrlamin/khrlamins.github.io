@@ -4,23 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Space Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-900 text-white">
-  <header class="bg-blue-800 p-4 text-white text-center text-2xl font-bold">
-    NASA Astronomy Picture of the Day
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="max-w-3xl mx-auto mt-6 p-4 bg-gray-800 rounded-xl shadow">
-    <input type="date" id="dateInput" class="w-full p-2 mb-4 text-black rounded" />
-    <div id="spaceContainer" class="text-center"></div>
+  <section>
+    <h1>NASA Astronomy Picture of the Day</h1>
+    <input type="date" id="dateInput" />
+    <div id="spaceContainer" style="margin-top: 20px;"></div>
 
-    <!-- Back button -->
-    <button onclick="window.location.href='index.html'"
-            class="mt-6 w-full bg-gray-500 text-white py-2 rounded hover:bg-gray-600">
-      ← Back to Home
-    </button>
-  </main>
+    <div class="dashboard-buttons">
+      <button onclick="window.location.href='index.html'">← Back to Home</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 kerol. All rights reserved.</p>
+  </footer>
 
   <script src="jsspace.js"></script>
 </body>
